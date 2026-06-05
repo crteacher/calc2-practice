@@ -3,21 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ============================================================
-     COURSE CONFIG — change these 4 lines to reuse for any class
-     ============================================================ -->
 <script>
 var COURSE = {
   title:      'Calculus 2',
   subtitle:   'Halverson Calc 2 Practice',
   instructor: 'Christopher Halverson',
   term:       'Fall 2026',
-  color:      '#185fa5'   /* accent color — change for each course */
+  color:      '#185fa5'
 };
 </script>
-<!-- ============================================================ -->
-
 <title>Halverson Calc 2 Practice</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
@@ -35,29 +29,20 @@ var COURSE = {
   .card{background:#fff;border:1.5px solid #ddd;border-radius:10px;overflow:hidden;
     text-decoration:none;color:#1a1a1a;transition:border-color .2s,box-shadow .2s;display:block}
   .card:hover{border-color:#185fa5;box-shadow:0 2px 8px rgba(24,95,165,.12)}
-  .card.soon{opacity:.5;cursor:default;pointer-events:none}
   .card-inner{padding:12px 14px}
   .card-num{font-family:sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;
     letter-spacing:.08em;color:#185fa5;margin-bottom:3px}
-  .card.soon .card-num{color:#aaa}
   .card-name{font-size:15px;font-weight:600;margin-bottom:2px}
   .card-tag{font-family:sans-serif;font-size:11px;color:#888}
-  .card.soon .card-tag{color:#bbb}
-  .badge{display:inline-block;font-family:sans-serif;font-size:10px;font-weight:700;
-    text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:20px;
-    background:#e8f0fb;color:#185fa5;margin-left:6px;vertical-align:middle}
   footer{text-align:center;font-family:sans-serif;font-size:12px;color:#999;padding:2rem 0}
 </style>
 </head>
 <body>
-
 <header id="site-header">
   <h1 id="site-title">Halverson Calc 2 Practice</h1>
   <p id="site-sub">Calculus 2 &nbsp;&middot;&nbsp; Christopher Halverson &nbsp;&middot;&nbsp; Fall 2026</p>
 </header>
-
 <div class="container">
-
   <div class="intro">
     Each card below opens an interactive practice page with 8 randomized problems.
     Type your answer and press <strong>Check</strong> — or hit Enter.
@@ -83,6 +68,9 @@ var COURSE = {
       </a>
       <a class="card" href="C2_14_Integration_By_Parts_Practice.html">
         <div class="card-inner"><div class="card-num">&sect;14</div><div class="card-name">Integration by Parts</div><div class="card-tag">8 randomized problems</div></div>
+      </a>
+      <a class="card" href="C2_15_Trig_Substitution_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;15</div><div class="card-name">Trig Substitution</div><div class="card-tag">8 randomized problems</div></div>
       </a>
       <a class="card" href="C2_16_Partial_Fraction_Decomposition_Practice.html">
         <div class="card-inner"><div class="card-num">&sect;16</div><div class="card-name">Partial Fractions</div><div class="card-tag">8 randomized problems</div></div>
@@ -115,6 +103,9 @@ var COURSE = {
       <a class="card" href="C2_11_Physical_Applications_Practice.html">
         <div class="card-inner"><div class="card-num">&sect;11</div><div class="card-name">Physical Applications</div><div class="card-tag">8 randomized problems</div></div>
       </a>
+      <a class="card" href="C2_12_Moments_Center_of_Mass_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;12</div><div class="card-name">Moments &amp; Center of Mass</div><div class="card-tag">8 randomized problems</div></div>
+      </a>
     </div>
   </div>
 
@@ -138,11 +129,11 @@ var COURSE = {
   <div class="unit">
     <div class="unit-title">Unit 4 &mdash; Differential Equations</div>
     <div class="grid">
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;19</div><div class="card-name">Intro to Differential Equations <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_19_Differential_Equations_Intro_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;19</div><div class="card-name">Intro to Differential Equations</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;21</div><div class="card-name">Separable Equations <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_21_Separable_Equations_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;21</div><div class="card-name">Separable Equations</div><div class="card-tag">8 randomized problems</div></div>
       </a>
     </div>
   </div>
@@ -151,44 +142,39 @@ var COURSE = {
   <div class="unit">
     <div class="unit-title">Unit 5 &mdash; Sequences &amp; Series</div>
     <div class="grid">
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;22</div><div class="card-name">Sequences <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_22_Sequences_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;22</div><div class="card-name">Sequences</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;23</div><div class="card-name">Series <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_23_Series_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;23</div><div class="card-name">Series</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;24</div><div class="card-name">Divergence &amp; Integral Tests <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_24_Divergence_Integral_Tests_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;24</div><div class="card-name">Divergence &amp; Integral Tests</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;25</div><div class="card-name">Comparison Test <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_25_Comparison_Tests_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;25</div><div class="card-name">Comparison Tests</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;26</div><div class="card-name">Alternating Series <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_26_Alternating_Series_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;26</div><div class="card-name">Alternating Series</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;27</div><div class="card-name">Ratio &amp; Root Tests <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_27_Ratio_Root_Tests_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;27</div><div class="card-name">Ratio &amp; Root Tests</div><div class="card-tag">8 randomized problems</div></div>
       </a>
-      <a class="card soon" href="#">
-        <div class="card-inner"><div class="card-num">&sect;28</div><div class="card-name">Power Series <span class="badge">Coming soon</span></div><div class="card-tag">8 randomized problems</div></div>
+      <a class="card" href="C2_28_Power_Series_Practice.html">
+        <div class="card-inner"><div class="card-num">&sect;28</div><div class="card-name">Power Series</div><div class="card-tag">8 randomized problems</div></div>
       </a>
     </div>
   </div>
-
 </div>
-
 <footer>
   <span id="footer-text">Halverson Calc 2 Practice &nbsp;&middot;&nbsp; Fall 2026 &nbsp;&middot;&nbsp; Problems reset each session &nbsp;&middot;&nbsp; Not for grade submission</span>
 </footer>
-
 <script>
-/* Apply course config to page elements */
 document.getElementById('site-title').textContent = COURSE.subtitle;
 document.getElementById('site-sub').innerHTML = COURSE.title + ' &nbsp;&middot;&nbsp; ' + COURSE.instructor + ' &nbsp;&middot;&nbsp; ' + COURSE.term;
 document.getElementById('footer-text').innerHTML = COURSE.subtitle + ' &nbsp;&middot;&nbsp; ' + COURSE.term + ' &nbsp;&middot;&nbsp; Problems reset each session &nbsp;&middot;&nbsp; Not for grade submission';
-/* Apply accent color */
 var style = document.createElement('style');
-style.textContent = '.card:hover{border-color:'+COURSE.color+'!important}.card-num{color:'+COURSE.color+'!important}.badge{background:#e8f0fb;color:'+COURSE.color+'!important}header{background:#1a1a1a}';
+style.textContent = '.card:hover{border-color:'+COURSE.color+'!important}.card-num{color:'+COURSE.color+'!important}header{background:#1a1a1a}';
 document.head.appendChild(style);
 </script>
 </body>
